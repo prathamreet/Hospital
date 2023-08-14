@@ -1,0 +1,102 @@
+
+
+:root{
+    --box-shadow-001: 0px 0px 9px -4px black;
+}
+
+body{
+    background-color: rgb(235, 255, 248);
+    /* border: 1px solid black; */
+    margin: 0px;
+    height: 3000px;
+    /* width: 90vw; */
+}
+
+/* ------------navigation bar------------ */
+
+
+.navigation-bar{
+    background-color: rgb(255, 211, 18);
+    border-bottom: 2px solid grey;
+    width: auto;
+    height: 15vmin;
+    min-height: 4em;
+
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+}
+
+#nd001{
+    max-width: 10em;  
+}
+
+.navigation-duo{
+    margin: 5px;
+    background-color: orange;
+    width: 100%;
+    height: auto;
+    min-height: 3em;
+}
+
+
+@media (max-width: 600px) {
+
+    .navigation-bar{
+        height: 30vmin;
+        flex-direction: column;
+        min-height: 9em;
+        justify-content: center;
+    }
+
+    .navigation-duo{
+        margin: 3px;
+        width: auto;
+        height: 5em;
+    }
+
+    #nd001{
+        max-width: none;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
