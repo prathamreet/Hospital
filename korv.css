@@ -8,7 +8,7 @@ body{
     background-color: rgb(235, 255, 248);
     /* border: 1px solid black; */
     margin: 0px;
-    height: 3000px;
+    height: 4000px;
     /* width: 90vw; */
     font-family: 'Ubuntu', sans-serif;
 }
@@ -16,7 +16,7 @@ body{
 /* ------------navigation bar------------ */
 
 .navigation-bar{
-    background-color: white;
+    background-color: black;
     height: 5em;
     width: 100%;
     /* border-bottom: 1px solid white; */
@@ -24,11 +24,11 @@ body{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    box-shadow: 0px 0px 15px -8px black;
+    /* box-shadow: 0px 0px 15px -8px black; */
 }
 
 #nav-duo-1{
-    background-color: rgb(255, 255, 255);
+    /* background-color: rgb(255, 255, 255); */
     height: 100%;
     width: 80%;
     max-width: 25em;
@@ -61,7 +61,7 @@ body{
 }
 
 #nav-duo-2{
-    background-color: rgb(255, 255, 255);
+    /* background-color: rgb(255, 255, 255); */
     height: 100%;
     width: 50em;
     display: flex;
@@ -81,7 +81,7 @@ body{
     text-align: center;
     justify-content: center;
     text-decoration: none;
-    color: black;
+    color: #26acc9;
     cursor: pointer;
     border-left: 5px solid #ffffff00;
     border-bottom: 5px solid #ffffff00;
@@ -92,6 +92,7 @@ body{
 }
 
 .navigation-buttons:hover{
+    background-color: white;
     border-left: 5px solid #26acc9;
     border-bottom: 5px solid #26acc9;
     box-shadow: 0px 0px 10px -7px black;
@@ -100,10 +101,11 @@ body{
 .navigation-burger{
     width: 40px;
     height: 50%;
-    background-color: rgb(255, 255, 255);
+    /* background-color: rgb(255, 255, 255); */
     display: none;
     margin: 5px;
     cursor: pointer;
+    filter: invert();
 }
 
 
@@ -124,35 +126,361 @@ body{
 
 /* -----------------Home Area------------------- */
 
+.home{
+    background-color: black;
+    width: 100%;
+    height: 50em;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.home-box{
+    height: 46em;
+    width: 46em;
+    padding: 5px;
+    /* margin: 10px; */
+
+    display: flex;
+
+}
+
+#home-box-1{
+    background-color: #26acc9;
+    /* border: 1px solid white; */
+    border-radius:95% 5% 100% 0% / 11% 17% 83% 89% ;
+}
+
+.home-box-rad{
+    background-color: #1a7488;
+    height: 40em;
+    width: 40em;
+    padding: 5px;
+    margin: 10px;
+
+    border-radius: 46% 54% 0% 100% / 6% 26% 74% 94% ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#home-box-2{
+    filter: brightness(80%);
+}
+
+.home-box h2{
+    font-size: 3em;
+}
+
+.home-box span{
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+@media (max-width: 1400px) {
+    
+    .home{
+        height: auto;
+    }
+
+    .home{
+        flex-direction: column-reverse;
+    }
+
+    .home-box{
+        width: 90%;
+        margin: 2em 0em;
+    }
+
+    .home-box-rad{
+        width: 80%;
+        margin: 2em;
+
+    }
+  
+}
+
+@media (max-width: 600px) {
+
+    .home-box{
+        height: 30em;
+    }
+
+    .home-box-rad{
+        height: 25em;
+    }
+
+    .home-box{
+        margin: 0px;
+    }
+
+    #home-box-1{
+        margin-top: 1em;
+    }
+
+}
 
 
+/* --------------DEpartment---------------- */
+
+.department{
+    background-color: black;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    border-top: 2px solid #1a7488;
+    padding-top: 5px;
+    
+}
+
+.department h1{
+    color: #26acc9;
+    text-align: center;
+    justify-content: center;
+    align-items:  center;
+    font-size: 2.5em;
+    margin-top: 1.2em;
+    /* text-decoration: underline; */
+}
+
+.depo{
+    /* background-color: aquamarine; */
+    height: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(16em, 1fr));
+    grid-gap: 1em;
+    place-items: center;
+}
+
+.department-items{
+    background-color: #1a7488;
+    width: 15em;
+    height: 20em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 10px;
+    margin: 10px;
+    text-align: center;
+    color: white;
+}
+
+.department-items img{
+    height: 8em;
+    margin-bottom: 10px;
+}
+
+.department-items a{
+    font-size: 1.6em;
+    text-decoration: underline;
+    text-align: center;
+    color: #99edff;
+    margin: 10px 0px;
+}
+
+.department-items a:hover{
+    color: #26acc9;
+}
+
+.department-items:hover{
+    box-shadow: var(--box-shadow-001);
+}
+
+@media (max-width: 550px) {
+
+    .department-items{
+        width: 90%;
+    }
+
+}
+
+/* ----------------------self-care------------------- */
+
+.self-care{
+    border-top: 2px solid #1a7488;
+    /* background-color: bisque; */
+    width: 100%;
+    height: 45em;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+}
+
+.self-care h2{
+    font-size: 4em;
+    margin: 20px 0px;
+    
+}
+
+.self-care p{
+    font-size: 1.5em;
+    text-align: center;
+    margin: 20px 0px;
+}
+
+.self-care span{
+    color: #26acc9;
+    font-weight: bold;
+}
+
+.self-care button{
+    width: 15em;
+    height: 5em;
+    border: 2px transparent;
+    margin: 20px 0px;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.self-care button:hover{
+    color: black;
+    background-color: #26acc9;
+}
+
+.self-care::before{
+    content: '';
+    position: absolute;
+    background-image: url("./Media/image/self-care-2.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+    filter: contrast(143%) brightness(0.3);
+}
+
+@media (max-width: 500px) {
+
+    .self-care::before{
+        background: url("/Media/image/self-care-3.jpg");
+    }
+
+}
+
+/* -----------doctor------------- */
+
+.H-doc{
+    font-size: 2.5em;
+    text-align: center;
+    background-color: black;
+    color: #26acc9;
+    border-top: 2px solid #1a7488;
+    padding: 5px;
+    height: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.doctor{
+    border-top: 2px solid #1a7488;
+    background-color: black;
+    width: 100%;
+    height: auto;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25em, 1fr));
+    grid-gap: 1em;
+    place-items: center;
+    
+}
+
+.doc-card{
+    background-color: #082931;
+    width: 20em;
+    height: 10em;
+    margin: 10px;
+    display: flex;
+    color: white;
+    border-radius: 15px;
+}
+
+.dc-inner{
+    text-align: center ;
+    color: rgb(201, 201, 201);
+}
+
+.dc-inner h3{
+    font-size: 1.5em;
+    color: rgb(204, 245, 255);
+}
 
 
+/* ---------------------diseases------------------------- */
 
+.diseases{
+    background-color: rgb(202, 244, 255);
+    width: 100%;
+    height: auto;
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+}
 
+.diseases h3{
+    font-size: 2em;
+    color: #1a7488;
+    text-decoration: underline;
+}
 
+.diseases p{
+    color: #000000;
+}
 
+.diseases img{
+    border-radius: 100%;
+}
 
+#di1{
+    margin: 50px;
+    text-align: left;
+}
 
+#di2{
+    margin: 50px;
+    /* text-decoration: underline; */
+    text-align: right;
+}
 
+@media (max-width: 1200px) {
 
+    .diseases{
+        flex-direction: column ;
+    }
 
+    .diseases img{
+        width: 40vmin;
+    }
 
+    
+    #di2{
+        display: none;
+    }
+    
+    
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@media (max-width: 750px) {
+    
+    #dp1{
+        display: none;
+    }
+    #dp2{
+        display: none;
+    }
+}
