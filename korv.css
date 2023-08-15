@@ -10,63 +10,119 @@ body{
     margin: 0px;
     height: 3000px;
     /* width: 90vw; */
+    font-family: 'Ubuntu', sans-serif;
 }
 
 /* ------------navigation bar------------ */
 
-
 .navigation-bar{
-    background-color: rgb(255, 211, 18);
-    border-bottom: 2px solid grey;
-    width: auto;
-    height: 15vmin;
-    min-height: 4em;
-
+    background-color: white;
+    height: 5em;
+    width: 100%;
+    /* border-bottom: 1px solid white; */
     display: flex;
     flex-direction: row;
-    /* flex-wrap: wrap; */
+    align-items: center;
     justify-content: space-between;
+    box-shadow: 0px 0px 15px -8px black;
 }
 
-#nd001{
-    max-width: 10em;  
+#nav-duo-1{
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+    width: 80%;
+    max-width: 25em;
+    /* margin: 0px 2px; */
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    /* max-width: 40vmin; */
+    width: 40vmin;
+    min-width: 18em;
 }
 
-.navigation-duo{
+.logo-image{
+    height: 100%;
+    margin: 0px 10px;
+}
+
+.logo-text{
+    font-size: 2em;
+    text-decoration: none;
+    color: #26acc9;
+    font-weight: bold;
+    margin: 0px 20px;
+    font-weight:800;
+    transition: all 0.2s ease-in-out;
+}
+
+.logo-text:hover{
+    color: #1a7488;
+}
+
+#nav-duo-2{
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+    width: 50em;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+}
+
+.navigation-buttons{
+    /* background-color: rgb(157, 231, 59); */
+    width: 7em;
+    height: 40%;
+    padding: 3px;
+    margin: 2px 10px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    border-left: 5px solid #ffffff00;
+    border-bottom: 5px solid #ffffff00;
+    border-radius: 5px;
+    font-weight: bold;
+    
+    transition: all 0.4s ease-in-out;
+}
+
+.navigation-buttons:hover{
+    border-left: 5px solid #26acc9;
+    border-bottom: 5px solid #26acc9;
+    box-shadow: 0px 0px 10px -7px black;
+}
+
+.navigation-burger{
+    width: 40px;
+    height: 50%;
+    background-color: rgb(255, 255, 255);
+    display: none;
     margin: 5px;
-    background-color: orange;
-    width: 100%;
-    height: auto;
-    min-height: 3em;
+    cursor: pointer;
 }
 
 
-@media (max-width: 600px) {
-
-    .navigation-bar{
-        height: 30vmin;
-        flex-direction: column;
-        min-height: 9em;
-        justify-content: center;
+@media (max-width: 830px) {
+    #nav-duo-2{
+        display: none;
     }
 
-    .navigation-duo{
-        margin: 3px;
-        width: auto;
-        height: 5em;
+    .navigation-burger{
+        display: inline-block;
     }
 
-    #nd001{
-        max-width: none;
+    #nav-duo-1{
+        min-width: 19em;
     }
 
 }
 
-
-
-
-
-
+/* -----------------Home Area------------------- */
 
 
 
