@@ -365,7 +365,7 @@ body{
 @media (max-width: 500px) {
 
     .self-care::before{
-        background: url("/Media/image/self-care-3.jpg");
+        background: url("./Media/image/self-care-3.jpg");
     }
 
 }
